@@ -95,3 +95,20 @@ a .logo:hover {
 p, label, h1, h2, h3 {
 	color: var(--text);
 }
+
+@media screen and (max-width: 1000px) {
+	.manga{
+		margin: 14px;
+	}
+	html {
+		font-size: 25px;
+	}
+	.manga {
+		.text-center {
+			font-size: 28px;
+		}
+		.small-text {
+			font-size: 25px;
+		}
+	}
+}
