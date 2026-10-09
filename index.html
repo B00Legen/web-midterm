@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="images/logo.png">
 		<title>Manga Archive</title>
-		<style>
-			#header {
-				height: 100px;
-				width: 100%;
-			}
-			#footer {
-				height: 150px;
-				width: 100%;
-			}
-		</style>
 	</head>
 	
 	<body>
-		<div class="d-flex flex-column align-items-center" style="row-gap: 20px;">
+		<div class="layout">
 			<!-- Header --!>
-			<div id="header" class="d-grid bg-warning align-content-center">
-				<img src="images/logo.png" style="padding: 0px 10%; height: 90%">
+			<div id="header">
+				<a href="index.html">
+					<img class="logo" src="images/logo.png">
+				</a>
+				<!-- other menus --!>
+				<div>
+					<a class="btn btn-primary" href="catalogue.html">Catalogue</a>
+					<a class="btn btn-primary" href="search.html">Search</a>
+					<a class="btn btn-primary" href="forum.html">Forum</a>
+				</div>
+				<!-- theme change and login --!>
+				<div>
+					<input type="checkbox" id="dark-mode-toggle" class="sr-only">
+					<label for="dark-mode-toggle" class="btn btn-primary align-items-center">Change Theme</label>
+					<a class="btn btn-primary" href="login.html">Log in</a>
+				</div>
 			</div>
-			<!-- Most popular --!>
-			<div class="bg-danger" style="height: 250px; width: 80%;">
-				
+			
+			<div class="content">
+				<!-- Most popular --!>
+				<div id="popular" class="panel d-flex flex-wrap justify-content-around">
+					<h1 class="text-center col-12">Most Popular</h1>
+					<div class="manga">
+						<img class="manga-cover" src="images/chainsaw-man.jpg">
+						<p class="text-center">Chainsaw Man</p>
+						<p class="small-text">Tatsuki Fujimoto</p>
+					</div>
+					<div class="manga">
+						<img class="manga-cover" src="images/blue-lock.jpg">
+						<p class="text-center">Blue Lock</p>
+						<p class="small-text">Kaneshiro Muneyuki</p>
+					</div>
+					<div class="manga">
+						<img class="manga-cover" src="images/frieren.jpg">
+						<p class="text-center">Frieren</p>
+						<p class="small-text">Kanehito Yamada</p>
+					</div>
+					<div class="manga">
+						<img class="manga-cover" src="images/spy-family.jpg">
+						<p class="text-center">Spy x Family</p>
+						<p class="small-text">Tatsuya Endo</p>
+					</div>
+					<div class="manga">
+						<img class="manga-cover" src="images/jujutsu-kaisen.jpg">
+						<p class="text-center">Jujutsu Kaisen</p>
+						<p class="small-text">Gege Akutami</p>
+					</div>
+					<div class="manga">
+						<img class="manga-cover" src="images/sakamoto.jpg">
+						<p class="text-center">Sakamoto Days</p>
+						<p class="small-text">Yuuto Suzuki</p>
+					</div>
+				</div>
+				<!-- Latest --!>
+				<div class="panel" id="latest">
+					<a class="btn btn-warning" href="p2.html">Next page</a>
+				</div>
+				<!-- Stats --!>
+				<table class="panel" id="stats">
+					<tr>
+						<th></th>
+						<th>All Time</th>
+						<th>Monthly</th>
+						<th>Weekly</th>
+					</tr>
+					<tr>
+						<td>Visits</td>
+						<td>1.0k</td>
+						<td>200</td>
+						<td>44</td>
+					</tr>
+					<tr>
+						<td>Reads</td>
+						<td>1.2k</td>
+						<td>277</td>
+						<td>75</td>
+					</tr>
+					<tr>
+						<td>Uploads</td>
+						<td>11</td>
+						<td>10</td>
+						<td>4</td>
+					</tr>
+				</table>
 			</div>
-			<!-- Latest --!>
-			<div class="bg-info" style="height: 1000px; width: 80%;">
-				
-			</div>
+		
 			<!-- Footer --!>
-			<div id="footer" class="bg-warning">
+			<div id="footer">
 				
 			</div>
 		</div>
